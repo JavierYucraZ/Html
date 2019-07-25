@@ -1,0 +1,52 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Titillium Web', sans-serif;	
+}
+
+.contenedor{
+
+}
+
+header .contenedor{
+	display: flex;
+	justify-content: space-between;  
+}
+
+header .menu .contenedor p{
+	font-family: 'Titan One', cursive;
+}
+
+header ul{
+	list-style: none;
+	display: flex;
+	margin: 15px;
+}
+
+header ul li{
+	margin: 0 15px;
+}
+
+header ul li a{
+	text-decoration: none;
+}
+
+/*
+rgb = red green blue
+a = alpha (transparencia) 0 a 1
+*/
+
+header{
+	background: linear-gradient(rgba(220, 350, 140, .8), rgba(150, 64, 175, .1)), url("../imagenes/fondo.jpg");
+	height: 100vh; /* 100% view * heigth */
+	background-size: cover;
+}
+
+#contenedorTituloID a{
+	font-size: 25px;
+	color: #fff;
+	text-decoration: none;
+	background: #ae40ef; /*rgb*/
+	padding: 15px;
+	border-radius: 15px;
+}
