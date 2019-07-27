@@ -8,6 +8,12 @@ body{
 	font-family: 'Titillium Web', sans-serif;	
 }
 
+#contenedorTituloID{
+	display: flex;
+	justify-content: center;
+	margin: 18vh 0;
+}
+
 .contenedor{
 	max-width: 1280px;
 	width: 100%;
@@ -48,6 +54,8 @@ header ul li a:hover{
 	text-align: center;
 }
 
+
+
 h1{
 	font-size: 60px;
 }
@@ -85,11 +93,13 @@ header{
 	transition: 1s;
 }
 
+/* Seccion Servicios */
+
 h3{
 	text-align: center;
 	font-size: 55px;
 	font-weight: normal;
-	margin : 10px 0;
+	margin : 30px 0;
 }
 
 .sobremiImagen{
@@ -110,3 +120,83 @@ h3{
 	font-size: 20px;
 	width: 50%;
 }
+
+/* Seccion Servicios */
+
+.contenedorServicios{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	justify-content: space-around;
+}
+
+.servicio{
+	width: 24%;
+	padding: 34px 30px 38px 30px;
+	border-radius: 10px;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+.servicio h4{
+	font-size: 30px;
+	margin: 0 ;
+}
+
+.servicio p{
+	margin-bottom: 20px;
+	height: 300px;
+}
+
+.contenedorServicios .servicio1{
+	background: linear-gradient(to top, #7a5959, #6fe8e9);
+	box-shadow: 0 12px 30px 2px rgba(80, 85, 223, 0.37);
+}
+
+.contenedorServicios .servicio2{
+	background: linear-gradient(to left, #bcd728, #baa6a6);
+	box-shadow: 0 12px 30px 2px rgba(80, 85, 223, 0.37);
+}
+
+.ondas{
+	width: 100%;
+	left:0;
+	bottom:0;
+	position: absolute;
+}
+
+.icono{
+	float: right;
+}
+
+/* Seccion footer */
+
+footer{
+	background: #2f2f2f;
+	padding: 20px 0;
+	text-align: center;
+	margin-top: 20px;
+}
+
+footer .contenedor{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+footer .sociales img{
+	margin:0 30px;
+	transform: rotate(0deg);
+	transform: 0.4s;
+}
+
+footer .sociales img:hover{
+	transform: rotate(360deg);
+	transition: 0.4s;
+}
+
+footer .DerechosReservados{
+	color: white;
+	margin-top: 15px;
+}
+
