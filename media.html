@@ -3,8 +3,50 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
+	<style>
+		
+		table th, td{
+			border: solid #abc;
+		}
+		
+		.t1{
+			background: #ab14ff;	
+		}
+
+		.t2{
+			background: #cd2896;
+		}
+
+	</style>
 </head>
 <body>
+
+<table>
+	<tr class="t1">
+		<th>Encabezado 1</th>
+		<th>Encabezado 2</th>
+		<th>Encabezado 3</th>
+		<th>Encabezado 4</th>
+	</tr>
+	<tr class="t2">
+		<td>Encabezado 1</td>
+		<td>Encabezado 2</td>
+		<td>Encabezado 3</td>
+		<td>Encabezado 4</td>
+	</tr>
+	<tr class="t1">
+		<td>Encabezado 1</td>
+		<td>Encabezado 2</td>
+		<td>Encabezado 3</td>
+		<td>Encabezado 4</td>
+	</tr>
+	<tr class="t2">
+		<td>Encabezado 1</td>
+		<td>Encabezado 2</td>
+		<td>Encabezado 3</td>
+		<td>Encabezado 4</td>
+	</tr> 
+</table>
 
 <!-- Crear una pagina con sonido de fondo 
 <embed src="multimedia/sound.mp3" hidden="true">
@@ -46,17 +88,43 @@ mkv -> es el mas pesado, con mejor calidad, pero es mas pesado
 <iframe width="940" height="600" src="https://www.youtube.com/embed/ryUxrFUk6MY" frameborder="0" allowfullscreen></iframe>
 -->
 
+<button>
+
 <a href="http://www.bing.com/" target="marco">Abrir Buscador de Bing</a>
 
-<iframe name="marco" src="" frameborder="0" width="940" height="600"></iframe>
+</button>
+
+<div class="ClaseReferenciada">	
+<iframe name="marco" src="http://www.bing.com/" frameborder="0" width="940" height="600"></iframe>
+</div>
+	
 
 
-<iframe src="https://open.spotify.com/embed/album/5pbMJWLEzbU0HNQBffJyRx" width="300" height="380" style="margin-left: 50vh;" 
+
+<div style="text-align: center;">
+
+<iframe src="https://open.spotify.com/embed/album/5pbMJWLEzbU0HNQBffJyRx" width="300" height="380" 
 frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+</div>
+
 
 <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/649688222&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 
+<!-- tr: table row
+	 th: table head	-->
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			$(".ClaseReferenciada").fadeToggle("fast");
+		});
+	});
+</script>
 
 </body>
 </html>
