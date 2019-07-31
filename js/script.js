@@ -10,9 +10,9 @@ $(document).ready(function(){
 			$('.menu').css({"z-index":"4"});
 			$('.menu a').css({"color":"black"});
 			$('.menu').css({"box-shadow":"rgba(0,0,0,0.22) 6px 1px 1px"});
-			$('.contenedorTitulo').css({"padding-top":"150px"});
+			$('.contenedorTitulo').css({"margin-top":"150px"});
 		}else{
-			$('.contenedorTitulo').css({"padding-top":"0"});
+			$('.contenedorTitulo').css({"margin-top":"0"});
 			$('.menu').css({"transition":".3s"});
 			$('.menu').css({"position":"relative"});
 			$('.menu').css({"background":"transparent"});
