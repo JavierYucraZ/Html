@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formularios</title>
+	<link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+	<!-- Las ventanas internas se conocen como Modal o como Dialogos -->
+	<a href="#Modal"> Abrir Modal </a>
+	<div id="Modal" class="DialogoModal">
+		<div>
+			<a href="#Cerrar" title="Cerrar" class="Cerrar">X</a>
+			<h2> Dialogo </h2>
+			<form action="">
+
+		Nombre : 
+		<input type="text" placeholder="Nombre"><br>
+		Busqueda :
+		<input type="search" placeholder="Busqueda"><br>
+		Numero : 
+		<input type="number" placeholder="Numero"><br>
+		Url : 
+		<input type="url" placeholder="www.ejemplo.com"><br>		<input type="reset" value="borrar">		
+			</form>
+		</div>
+	</div>
+
+	<!-- Para el envio de datos, existen 2 metodos
+		get : Envia los datos por la Url
+		post : Oculta los datos y los envia por detras -->
+	<form action="" method="get">
+
+		Nombre : 
+		<input type="text" placeholder="Nombre"><br>
+		Busqueda :
+		<input type="search" placeholder="Busqueda"><br>
+		Numero : 
+		<input type="number" placeholder="Numero"><br>
+		Url : 
+		<input type="url" placeholder="www.ejemplo.com"><br>
+		Email : 
+		<input type="email" placeholder="ejemplo@prueba.com"><br>
+		Password : 
+		<input type="password" placeholder="password"><br>
+		Hidden : 
+		<input type="hidden" placeholder="etiqueta escondida" value="valor escondido"><br>
+		Area de Texto : 
+		<textarea cols="30" rows="10" placeholder="Area de Texto"></textarea><br>
+		Numero con valor inicial y rango : 
+		<input type="number" value="25" min="0" max="50" step="5"><br>
+		Fechas : 
+		<input type="date" min="2019-01-01" max="2019-01-31"><br>
+		Hora : 
+		<input type="time"><br>
+		Sexo : 
+		<input type="radio" value="H"> Hombre
+		<input type="radio" value="M"> Mujer
+		<br>
+		CheckBox : 
+		<input type="checkbox" checked> Opcion 1
+		<input type="checkbox"> Opcion 2
+		<input type="checkbox"> Opcion 3
+		<br>
+		Lista de Opciones
+		<select>
+			<option disabled selected> Seleccione Pais 
+			</option>
+			<option>Bolivia</option>
+			<option>Peru</option>
+			<option>Chile</option>
+			<option>Argentina</option>
+			<option>Brasil</option>
+		</select>
+<br>
+Opciones Multiples
+		<select>
+			<optgroup label="Opciones 1">
+				<option>Bolivia</option>
+				<option>Peru</option>
+				<option>Chile</option>
+				<option>Argentina</option>
+				<option>Brasil</option>
+			</optgroup>
+			<optgroup label="Opciones 2">
+				<option>item 1</option>
+				<option>item 2</option>
+				<option>item 3</option>
+				<option>item 4</option>
+				<option>item 5</option>
+			</optgroup>
+		</select><br>
+		Selecciona un color : 
+		<input type="color" value="#000">
+		Selecciona un archivo : 
+		<input type="file" accept=".pdf, .jpg, .png" multiple>
+		<br>
+		Formulario Interno
+		<fieldset>
+			<legend>Formulario De Registro</legend>
+			Nombre : 
+		<input type="text" placeholder="Nombre"><br>
+		Busqueda :
+		<input type="search" placeholder="Busqueda"><br>
+		Numero : 
+		<input type="number" placeholder="Numero"><br>
+		</fieldset>
+		<input type="submit" value="Enviar">
+	</form>
+
+</body>
+</html>
