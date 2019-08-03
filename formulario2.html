@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario con estilos</title>
+	<link rel="stylesheet" href="css/formulario.css">
+</head>
+<body>
+	<form action="index.html" class="formulario">
+		<fieldset>
+			<legend>Formulario de envio de Email</legend>
+			<label for="correo"> Correo Electronico 
+				<input name="correo" type="email" placeholder="nombre@correo.com">
+			</label><br>
+			<label for="asunto"> Asunto 
+				<input name="asunto" type="text" placeholder="asunto">
+			</label><br>
+			<label for="mensaje"> Mensaje 
+				<textarea name="mensaje" cols="30" rows="10">
+				</textarea>
+			</label>
+			<input type="submit" value="enviar">
+		</fieldset>
+	</form>
+</body>
+</html>
