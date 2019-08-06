@@ -10,4 +10,9 @@ $(document).ready(function(){
 			$('.menu').css({"box-shadow":"0 0 0"});
 		}
 	});
+
+	$('.menu-icono').click(function(){
+		$('header nav').slideToggle();
+	});
+
 });

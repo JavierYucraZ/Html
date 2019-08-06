@@ -8,10 +8,15 @@ body{
 	font-family: 'Titillium Web', sans-serif;	
 }
 
+.menu-icono{
+	display: none;
+}
+
 #contenedorTituloID{
 	display: flex;
 	justify-content: center;
 	margin: 18vh 0;
+	width: 100%;
 }
 
 .contenedor{
@@ -216,4 +221,108 @@ footer .DerechosReservados{
 	top: 90%;
 	right: 5%;
 	z-index: 3;
+}
+
+.slider{
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul{
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: cambio 20s infinite alternate;
+}
+
+.slider ul li{
+	width: 100%;
+	list-style: none;
+}
+
+.slider img{
+	width: 100%;
+}
+
+@keyframes cambio{
+	
+	0%{ margin-left: 0%; }
+	20%{ margin-left: 0%; }
+
+	25%{ margin-left: -100%; }
+	45%{ margin-left: -100%; }
+
+	50%{ margin-left: -200%; }
+	70%{ margin-left: -200%; }
+	
+	75%{ margin-left: -300%; }
+	100%{ margin-left: -300%; }
+
+}
+
+
+/* @media : hace referencia a dispositivos moviles 
+max-width : hace referencia a un tamaño maximo que tendra el dispositivo 
+para tablets el tamaño estandar es 800px y para celulares es de 480px*/
+
+@media (max-width: 800px){
+	
+	.menu-icono{
+		display: block;
+		float: right;
+		margin: 25px 25px 0 0;
+	}
+
+	header nav{
+		position: absolute;
+		top: 83px ;
+		left: 0 ;
+		height: 250px;
+		background: #5cb8ff;
+		width: 100%;
+		display: none;
+	}
+
+	header nav ul{
+		margin-top: 0;
+		flex-direction: column;
+	}
+
+	#SobreMi img{
+		width: 100%;
+		margin-top: 0;
+	}
+
+	#SobreMi .contenedor-sobremi{
+		flex-direction: column;
+	}
+
+	#SobreMi .sobremiTexto{
+		width: 100%;
+		text-align: center;
+	}
+
+	#Servicios .contenedorServicios{
+		flex-direction: column;
+	}
+
+	.servicio{
+		width: 75%;
+	}
+	
+	h3{
+		margin-top: 30px;
+		font-size: 40px;
+	}
+
+	footer{
+		margin: 0;
+		padding: 10px;
+	}
+
+	footer p{
+		margin-top: 0;
+	}
+
 }

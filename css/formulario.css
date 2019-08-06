@@ -1,19 +1,19 @@
 body{
 	margin: 0 ;
 	padding: 0 ;
-	font-family: Arial, Helvetica, sans-serif;
-	background: #34495e;
-	color: white;
+	font-family: Arial, Helvetica, sans-serif ;
+	background: #34495e ;
+	color: white ;
 }
 
 .formulario{
-	width : 300px;
-	padding : 40px;
+	width : 300px ;
+	padding : 40px ;
 	position : absolute;
 	top : 50% ;
 	left : 50% ;
-	transform: translate(-50%, -50%);
-	text-align: center;
+	transform: translate(-50%, -50%) ;
+	text-align: center ;
 }
 /* translate : mueve el contenido en un eje x y en eje y */
 
